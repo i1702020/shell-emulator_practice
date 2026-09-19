@@ -1,3 +1,5 @@
+from parser import parse
+
 def run_command(line: str) -> str:
     cmd, args = parse(line)
     if cmd is None:
