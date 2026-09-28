@@ -25,6 +25,8 @@ def run_command(line: str) -> str:
         return cmd_tree(args)
     if cmd == "uptime":
         return cmd_uptime()
+    if cmd == "chmod":
+        return cmd_chmod(args)
     return f"command not found: {cmd}"
 
 def cmd_ls(args):
@@ -67,3 +69,12 @@ def cmd_uptime():
     elapsed = time.time() - start_time
     return f"Uptime: {int(elapsed)} seconds"
 
+def cmd_chmod(args):
+    if len(args) < 2:
+        return "Usage: chmod <mode> <path>"
+    mode, path = args[0], args[1]
+    node = vfs.resolve_path(path)
+    if not node:
+        return f"chmod: {path}: No such file or directory"
+    node.mode = mode
+    return f"Mode of {path} changed to {mode}"
