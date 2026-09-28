@@ -1,0 +1,6 @@
+path,type,content,mode
+/,dir,,755
+/home,dir,,755
+/home/user,dir,,755
+/home/user/docs,dir,,755
+/home/user/docs/note.txt,file,Tm90ZQ==,644

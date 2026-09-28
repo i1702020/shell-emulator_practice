@@ -1,0 +1,6 @@
+path,type,content,mode
+/,dir,,755
+/home,dir,,755
+/home/user,dir,,755
+/home/user/file1.txt,file,SGVsbG8=,644
+/home/user/file2.txt,file,V29ybGQ=,644
