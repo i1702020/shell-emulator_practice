@@ -1,0 +1,5 @@
+path,type,content,mode
+/,dir,,755
+/home,dir,,755
+/home/user,dir,,755
+/home/user/readme.txt,file,SGVsbG8=,644
