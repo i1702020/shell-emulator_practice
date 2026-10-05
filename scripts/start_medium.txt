@@ -1,0 +1,8 @@
+ls
+cd /home
+cd ..
+tree
+uptime
+chmod 755 /home/user/readme.txt
+ls /nope
+exit
