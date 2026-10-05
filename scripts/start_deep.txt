@@ -1,0 +1,6 @@
+tree
+cd /home/user/docs
+ls
+chmod 644 /home/user/docs/note.txt
+chmod 600
+exit
